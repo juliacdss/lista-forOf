@@ -10,14 +10,15 @@
     
     //PROCESSAMENTO
     let resultadoPares = [];
-    for (let item of listaDeNumeros)
-        if (item % 2 === 0){
+    for (let item of listaDeNumeros) {
+        if (item % 2 == 0){
         resultadoPares.push(item);
     }
+    }
     
-    resultadoPares.sort((a, b) >= a - b)
+    resultadoPares.sort((a, b) => a - b);
 
     //SAÍDA
-    document.write(`Os números da lista que são pares são: ${resultadoPares}`);
+    document.write("Os números da lista que são pares são: ", resultadoPares.join(", "));
 
 </script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista de nomes abaixo:
+    // let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. Considere que poderão haver "Joãos" sem ~ (til).
+
+    //ENTRADA
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let joao = [];
+
+    //PROCESSAMENTO
+    for (let item of listaDeNomes) {
+        if (item.includes("João") || item.includes("Joao") ) {
+            joao.push(item);
+        }
+    }
+    
+    //SAÍDA
+    document.write("Lista de nomes com João/Joao:");
+    for (let item of joao) {
+        document.write(` <li>${item}</li>`);
+    }
+    
+</script>

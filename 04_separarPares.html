@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista abaixo:
+    // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
+
+    //ENTRADA
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+
+    //PROCESSAMENTO
+    let numerosPares = [];
+    for (let item of listaDeItens) {
+    if (item % 2 == 0) {
+        numerosPares.push(item);
+    }
+}
+    //SAÍDA
+    document.write("Números pares:", numerosPares.sort((a, b) => a - b), "<br>");
+    document.write("Quantidade de números pares:", numerosPares.length, "<br>");
+    document.write("Quantidade de elementos na lista original:", listaDeItens.length);
+
+</script>
